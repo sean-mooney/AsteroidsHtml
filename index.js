@@ -34,10 +34,6 @@ function initializeGame(restart) {
     enableAsteroidSpawning(true);
 }
 
-function loadHighScores() {
-    
-}
-
 function endGame(restart) {
     if (!restart) {
         playingField.removeChild(playerElement);
