@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css" type="text/css"/>
+    </head>
+    <body>
+        <script src="index.js"></script>
+        <div id="playingField" class="background">
+            <div id="titleCard" class="titleCardWrapper">
+                <div class="titleCardContainer">
+                    <div class="subTitle">Sean Mooney's</div>
+                    <div class="title">Space Rock Pew Pew Game</div>
+                    <div class="buttonContainer">
+                        <div class="buttonElement" onclick="initializeGame()">Start</div>
+                        <div class="buttonElement">Hi-Scores</div>
+                    </div>
+                </div>
+            </div>
+            <div id="endScoreCard" class="titleCardWrapper endGameCard hidden">
+                <div class="titleCardContainer">
+                    <div class="title">Good try!</div>
+                    <div class="centerThisThing endGameScore">
+                        <span class="lblScore">Your score:</span>
+                        <span id="endScoreElement" class="score">0</span>
+                    </div>
+                    <div class="buttonContainer">
+                        <div class="buttonElement" onclick="initializeGame(true)">Restart</div>
+                        <div class="buttonElement">Hi-Scores</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerBar" class="footer">
+            <div id="gameControls" class="gameControls hidden">
+                <div class="backButton">
+                    <div class="footerButton" onclick="endGame()">Back</div>
+                </div>
+                <div class="pauseButton">
+                    <div class="footerButton" onclick="pauseGame()">Pause</div>
+                </div>
+                <div class="centerThisThing">
+                    <span class="lblScore">Score:</span>
+                    <span id="scoreElement" class="score">0</span>
+                </div>
+                <div class="pushRight">
+                    &copy; Sean Mooney 2019
+                </div>
+            </div>
+            <div class="centerThisThing">
+                &copy; Sean Mooney 2019
+            </div>
+        </div>
+    </body>
+</html>

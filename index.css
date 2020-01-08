@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.background {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.titleCardWrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.titleCardContainer {
+    color: white;
+    margin-bottom: 200px;
+}
+
+.subTitle {
+    font-size: 18px;
+    color: #444444;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 5vw;
+    text-shadow: 0 0 3px rgb(134, 134, 134);
+    font-weight: 500;
+}
+
+.buttonContainer {
+    max-width: 300px;
+    margin: 100px auto 0;
+}
+
+.buttonElement {
+    width: 100%;
+    min-height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    display: flex;
+    font-size: 22px;
+    font-weight: 400;
+    border-radius: 6px;
+    margin: 30px 0;
+    transition: all ease 0.2s;
+    cursor: pointer;
+}
+
+.buttonElement:hover {
+    color: black;
+    background: white;
+}
+
+.footer {
+    color: black;
+    background: white;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    box-shadow: 0px -5px 5px rgb(230, 230, 230);
+    display: block;
+}
+
+.gameControls {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.footerButton {
+    width: 160px;
+    height: 40px;
+    border: 1px solid black;
+    transition: all ease 0.2s;
+    font-size: 22px;
+    border-radius: 6px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footerButton:hover {
+    color: white;
+    background: rgb(39, 39, 39);
+    border-color: gray;
+}
+
+.pushRight {
+    margin-left: auto;
+}
+
+.lblScore, .score {
+    font-size: 22px;
+}
+
+.centerThisThing {
+    text-align: center;
+    margin:auto;
+}
+
+.player {
+    width: 0; 
+    height: 0; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 30px solid white;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+}
+
+.pellet {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+}
+
+.shooter {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    visibility: hidden;
+    top: -1px;
+}
+
+.asteroid {
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.asteroid-1 { width: 20px; height: 20px; }
+.asteroid-2 { width: 40px; height: 40px; }
+.asteroid-3 { width: 60px; height: 60px; }
+.asteroid-4 { width: 80px; height: 80px; }
+.asteroid-5 { width: 100px; height: 100px; }
+
+.hidden { display: none;}
+
+.paused, .paused > .asteroid {
+    background: white;
+    border-color: black;
+}
+
+.paused > .player {
+    border-right: 30px solid black;
+}
